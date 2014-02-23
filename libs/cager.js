@@ -15,7 +15,6 @@ exports.cage = function(image_location, callback) {
 		var ctx = catCanvas.getContext('2d');
 		ctx.drawImage(img, 0, 0, img.width, img.height);
 
-		// TODO broken - doesn't seem to think catCanvas is a canvas
 		var cats = kittydar.detectCats(catCanvas);
 		console.log("there are", cats.length, "cats in this photo");
 		console.log(cats[0]);
