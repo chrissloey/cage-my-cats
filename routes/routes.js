@@ -9,10 +9,6 @@ exports.index = function(req, res){
 	res.render('index');
 };
 
-exports.caged = function(req, res){
-	res.render('index', {image_src: req.image_src});
-};
-
 /*
  * POST upload
  */
