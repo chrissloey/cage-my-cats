@@ -4,7 +4,7 @@ fs = require('fs'),
 		Image = Canvas.Image;
 
 exports.cage = function(image_location, callback) {
-	fs.readFile(__dirname + '/../public/images/example.jpg', function(err, data){
+	fs.readFile(image_location, function(err, data){
 		if (err) throw err;
 		var img = new Image;
 		img.src = data;

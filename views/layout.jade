@@ -1,7 +1,14 @@
 doctype html
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/stylesheets/dropzone.css')
+		script(src='/javascripts/dropzone.js')
+		script(src='/javascripts/upload.js')
+		script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+	body
+		.container
+			block content
+			footer
+				p By CodeCreatedMe
