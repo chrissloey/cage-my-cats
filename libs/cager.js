@@ -19,6 +19,21 @@ exports.cage = function(image_location, callback) {
 		console.log("there are", cats.length, "cats in this photo");
 		console.log(cats[0]);
 
-		callback(catCanvas.toDataURL());
+		replaceCatFaces(catCanvas, cats, callback);
 	});
 }
+
+var replaceCatFaces = function(canvas, cats, callback) {
+	fs.readFile(__dirname + '/../public/images/cage.png', function(err, data){
+		if (err) throw err;
+		var cage_img = new Image;
+		cage_img.src = data;
+
+		var ctx = canvas.getContext('2d');
+		for (var i = cats.length - 1; i >= 0; i--) {
+			var cat = cats[i];
+			ctx.drawImage(cage_img, cat.x, cat.y, cat.width, cat.height);
+		};
+		callback(canvas.toDataURL());
+	});
+};
