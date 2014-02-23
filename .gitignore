@@ -1,3 +1,5 @@
+.DS_Store
+
 lib-cov
 lcov.info
 *.seed
