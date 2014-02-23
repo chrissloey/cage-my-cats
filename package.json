@@ -1,7 +1,6 @@
 {
   "name": "cage-my-cats",
   "version": "0.0.1",
-  "subdomain": "cage-my-cats", //Nodejitsu
   "scripts": {
     "start": "node app.js"
   },
@@ -10,5 +9,9 @@
     "jade": "*",
     "kittydar": "0.1.6",
     "canvas": "1.0.1"
+  },
+  "subdomain": "cage-my-cats",
+  "engines": {
+    "node": "0.10.x"
   }
 }
