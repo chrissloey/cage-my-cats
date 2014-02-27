@@ -51,8 +51,8 @@
 }
 .dropzone .dz-preview .dz-details,
 .dropzone-previews .dz-preview .dz-details {
-  width: 100px;
-  height: 100px;
+  width: 400px;
+  height: 400px;
   position: relative;
   background: #ebebeb;
   padding: 5px;
