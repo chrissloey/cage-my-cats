@@ -3,7 +3,6 @@ Dropzone.options.catDrop  = {
     dictDefaultMessage: "Drag cat to be Caged",
     acceptedFiles: "image/*", // Accept images only
     maxFiles: 1,
-    previewTemplate, dz-preview,
     success: function(file, response) {
     	if (!response.image_src) {
     		return;
